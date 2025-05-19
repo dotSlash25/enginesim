@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmaenc20lak8g"]
+
+[ext_resource type="Script" uid="uid://dpel3fkqese4c" path="res://engine_base.gd" id="1_abgln"]
+
+[node name="EngineBase" type="Node2D"]
+script = ExtResource("1_abgln")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+autoplay = true

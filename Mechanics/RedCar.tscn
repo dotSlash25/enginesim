@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://8higprfr86at"]
+
+[ext_resource type="PackedScene" uid="uid://d3o0suymfslb7" path="res://Mechanics/car_base.tscn" id="1_h5nsi"]
+[ext_resource type="Texture2D" uid="uid://cbmow5p1ayyng" path="res://SpriteStack_Cars/RedCar.png" id="2_nfvi2"]
+[ext_resource type="PackedScene" uid="uid://b72ayj4h874ot" path="res://Mechanics/Engine/i_4.tscn" id="3_nfvi2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wwshr"]
+
+[node name="RedCar" instance=ExtResource("1_h5nsi")]
+motion_mode = 1
+wheelBase = 9
+steerAngle = 0.5
+dragLCoeff = 0.05
+dragQCoeff = 0.02
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_nfvi2")
+hframes = 8
+
+[node name="CollisionShape2D" parent="." index="1"]
+shape = SubResource("RectangleShape2D_wwshr")
+
+[node name="I4" parent="." index="2" instance=ExtResource("3_nfvi2")]

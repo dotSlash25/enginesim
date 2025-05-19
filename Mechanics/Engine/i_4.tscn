@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b72ayj4h874ot"]
+
+[ext_resource type="PackedScene" uid="uid://bmaenc20lak8g" path="res://Mechanics/Engine/engine_base.tscn" id="1_3edko"]
+[ext_resource type="AudioStream" uid="uid://c88poolpg4fys" path="res://eng.wav" id="2_wm7f2"]
+
+[node name="I4" instance=ExtResource("1_3edko")]
+maxTorque = 174.0
+maxPower = 78351.3
+gearRatios = Array[float]([0.0, 3.82, 2.36, 1.52, 1.14, 0.87, 0.69])
+torqueCurveConsts = Array[int]([500, 1000, 4000, 7000])
+starterMotorTorque = 80.0
+sound = ExtResource("2_wm7f2")
